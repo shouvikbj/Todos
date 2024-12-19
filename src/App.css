@@ -1,0 +1,91 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top */
+  background-color: #121212; /* Dark background for dark mode */
+  color: white; /* Text color */
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+}
+
+body {
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%; /* Make it fit the full width */
+  /* max-width: 600px; */
+  margin: 20px auto; /* Center it horizontally and add vertical spacing */
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background for the todo app */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+/* Input box and button styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  color: white;
+  box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50; /* Green button */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Style for the todo list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure the list takes up the full width */
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #2a2a2a;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+li p {
+  margin: 0;
+  flex: 1; /* Allow text to take up remaining space */
+  padding-right: 10px; /* Add space between text and buttons */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 80%; /* Prevent text from overflowing buttons */
+}
+
+li button {
+  background-color: #f44336; /* Red button for delete */
+}
+
+li button:hover {
+  background-color: #e53935; /* Slightly darker red on hover */
+}
